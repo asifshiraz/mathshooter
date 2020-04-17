@@ -112,7 +112,7 @@ public class GameManager : MonoBehaviour
 
     private List<int> Shuffle(List<int> input)
     {
-        var shuffled = input.ToArray();
+        var shuffled = new List<int>(input);
         var randomIterations = UnityEngine.Random.Range(4, 20);
         int i = 0;
         while (i < randomIterations)
